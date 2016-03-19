@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<!--<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>-->
+		<script type="text/javascript" src="placeholde.js" ></script>
+		<title></title>
+		<style>
+		body{font-size: 12px;}
+			input{ width: 120px;  height: 20px; line-height: 20px;background-color: #ffffff;
+    border: 2px solid #e1e1e1;margin-bottom: 10px;padding: 0 10px;vertical-align: middle; font-family: "微软雅黑"; margin-top: 20px; margin-left: 100px; float: left; color: #888888;}
+    		input.focus{border: 2px solid #353535;box-shadow: none;}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+//				$(document).on('input propertychange','#input', function() {  
+//				    alert(2) 
+//				});
+				$("input").placeholder({
+					focus:true,
+					fontSize:'14px'
+				});
+//				$("#input").addClass("on");
+//				var hasPlaceholderSupport = function(){
+//					var attr = "placeholder";
+//					var input = document.createElement("input");
+//					return attr in input;
+//				};
+//				var support = hasPlaceholderSupport();
+//				if(support){
+//					$("input").each(function(){
+//						var placetext = $(this).attr("placeholder");
+//						$(this).val(placetext);
+//					});
+//					
+////					$("body").on("oninput", "input", function(){
+////						alert(1)
+////						var me = $(this);
+////						me.select();
+////						
+////						var placetext = me.attr("placeholder");
+////						if(me.val()==placetext){
+////							me.val("");	
+////						} else {
+////							me.select();
+////						}
+////						me.addClass("focusclass").removeClass("blurclass");
+////					}).on("blur", "input", function(){
+////						var me = $(this);
+////						var placetext = me.attr("placeholder");
+////						if(me.val()==""){
+////							me.val(placetext).addClass("blurclass").removeClass("focusclass");	
+////						}
+////					});
+//				};
+////				$("input").select(function(){
+////				    $("input").after("被选中");
+////				});
+////			  	$("button").click(function(){
+////			    	$("input").select();
+////			  	}); 
+				
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" placeholder="姓名" class="input" />
+		<input type="text" placeholder="电话" class="input" />
+	</body>
+</html>
